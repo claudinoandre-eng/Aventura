@@ -1,0 +1,2 @@
+ 
+const avanca = document.querySelectorAll

@@ -1,0 +1,17 @@
+body{
+    background-color: #1d4221;
+    color: white;
+    font-family: "Archivo Black", sans-serif;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    height: 700px;
+    margin: 0;
+}
+button{
+    background-color: rgb(3, 151, 139);
+    color: white;
+    font-family: "Archivo Black", sans-serif;
+}
