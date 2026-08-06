@@ -1,0 +1,182 @@
+HTML
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <title>Em busca da cidade perdida</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/3707452-biblioteca-escola-interior-com-alunos-gratis-vetor.jpg" alt="Imagem ilustrando o cenário inicial">
+            <p>Na biblioteca da escola, você encontrou um livro misterioso sobre uma cidade perdida. O texto aponta dois locais para começar a expedição:</p>
+            <button class="btn-proximo" data-proximo="1">Viajar para o Rio de Janeiro</button>
+            <button class="btn-proximo" data-proximo="2">Viajar para Pernambuco</button>
+        </div>
+
+        <div class="passo" id="passo-1">
+            <img src="img/acampar-na-natureza_1308-23189.avif" alt="imagem ilustrando o cenario">
+            <p>No Rio de Janeiro, a pista aponta para uma montanha coberta pela mata nativa. Como você pretende subir?</p>
+            <button class="btn-proximo" data-proximo="3">Pegar a trilha antiga a pé</button>
+            <button class="btn-proximo" data-proximo="4">Entrar na caverna na base da montanha</button>
+        </div>
+
+        <div class="passo" id="passo-2">
+            <img src="img/stylized-illustration-ancient-greek-ruins-260nw-2733040219.webp" alt="imagem ilustrando o cenario">
+            <p>Em Pernambuco, o livro leva a ruínas de um antigo forte à beira-mar. Há duas entradas possíveis:</p>
+            <button class="btn-proximo" data-proximo="5">Seguir pelo túnel subterrâneo</button>
+            <button class="btn-proximo" data-proximo="6">Subir até a torre de observação</button>
+        </div>
+
+        <div class="passo" id="passo-3">
+            <img src="img/arco-de-pedra-antigo-sobre-grama_1308-166708.avif" alt="Portal de pedra antigo em um mirante">
+            <p>A trilha o leva até um mirante secreto. Na rocha, há um antigo portal de pedra e inscrições gravadas:</p>
+            <button class="btn-proximo" data-proximo="7">Atravessar o portal de pedra</button>
+            <button class="btn-proximo" data-proximo="8">Examinar o mapa esculpido na rocha</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/51970414-desenho-animado-caverna-com-uma-cheio-lua-e-montanhas-visao-dentro-a-noite-ilustracao-vetor.jpg" alt="Interior de caverna escura">
+            <p>A caverna fica escura e o caminho direto está bloqueado por pedras. No entanto, há um pequeno feixe de luz ao fundo.</p>
+            <button class="btn-proximo" data-proximo="9">Forçar passagem entre as pedras</button>
+            <button class="btn-proximo" data-proximo="1">Voltar e pegar a trilha</button>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <img src="img/tunel-subterraneo-cristais-brilhantes.jpg" alt="Túnel subterrâneo iluminado por cristais reluzentes">
+            <p>O túnel subterrâneo leva a uma bifurcação iluminada por cristais reluzentes no teto:</p>
+            <button class="btn-proximo" data-proximo="10">Entrar no Templo do Sol</button>
+            <button class="btn-proximo" data-proximo="11">Entrar no Templo da Lua</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <img src="img/torre-observacao-luneta-oceano.jpg" alt="Alto de uma torre antiga com luneta apontada para o mar">
+            <p>Do alto da torre, você avista uma luneta antiga apontada para o oceano.</p>
+            <button class="btn-proximo" data-proximo="12">Olhar pela luneta antiga</button>
+            <button class="btn-proximo" data-proximo="2">Descer e tentar o túnel subterrâneo</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <img src="img/ponte-suspensa-ravina-canal-agua.jpg" alt="Ponte suspensa sobre uma ravina profunda e canal de água">
+            <p>Ao atravessar o portal, você se depara com uma ravina profunda. Há uma ponte suspensa e um canal de água abaixo.</p>
+            <button class="btn-proximo" data-proximo="13">Atravessar a ponte suspensa</button>
+            <button class="btn-proximo" data-proximo="14">Seguir pelo canal de água</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <img src="img/mapa-esculpido-rocha-constelacoes.jpg" alt="Mapa antigo esculpido em rocha mostrando estrelas e constelações">
+            <p>O mapa esculpido mostra que a cidade perdida é guiada pelas constelações ou por uma bússola mágica.</p>
+            <button class="btn-proximo" data-proximo="15">Usar a bússola de bronze encontrada no chão</button>
+            <button class="btn-proximo" data-proximo="16">Guiar-se pelo desenho das estrelas no mapa</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <img src="img/alavanca-pedra-caverna-secreta.jpg" alt="Alavanca de pedra oculta na parede de uma caverna">
+            <p>Você consegue empurrar as pedras e descobre uma alavanca de pedra oculta na parede da caverna.</p>
+            <button class="btn-proximo" data-proximo="17">Puxar a alavanca de pedra</button>
+            <button class="btn-proximo" data-proximo="3">Subir a fresta e ir para a trilha</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <img src="img/templo-do-sol-altar-dourado.jpg" alt="Interior do Templo do Sol com inscrições e amuleto em um altar">
+            <p>No Templo do Sol, há um enigma escrito na parede: "O que brilha sem nunca se apagar?".</p>
+            <button class="btn-proximo" data-proximo="18">Responder "O Conhecimento"</button>
+            <button class="btn-proximo" data-proximo="19">Pegar o amuleto dourado no altar</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="img/templo-da-lua-espelhos-cristal.jpg" alt="Templo da Lua com espelhos refletindo luz para um cristal central">
+            <p>No Templo da Lua, espelhos refletem a luz para um pedestal no centro da sala.</p>
+            <button class="btn-proximo" data-proximo="20">Ajustar os espelhos para o centro</button>
+            <button class="btn-proximo" data-proximo="21">Tocar no cristal azul do pedestal</button>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <img src="img/vista-luneta-ilha-misteriosa.jpg" alt="Visão através de uma luneta mostrando uma ilha oculta no mar">
+            <p>Pela luneta, você vê uma ilha secreta que não consta em nenhum mapa tradicional!</p>
+            <button class="btn-proximo" data-proximo="22">Usar um barco antigo na praia para ir à ilha</button>
+            <button class="btn-proximo" data-proximo="5">Ir para o túnel subterrâneo do forte</button>
+        </div>
+
+        <div class="passo" id="passo-13">
+            <img src="img/portas-gigantes-bronze-salao-principal.jpg" alt="Portas gigantes de bronze na entrada de um templo ancestral">
+            <p>A ponte rangeu, mas você cruzou com segurança e chegou às portas gigantes de bronze do Salão Principal!</p>
+            <button class="btn-proximo" data-proximo="23">Empurrar as portas gigantes</button>
+        </div>
+
+        <div class="passo" id="passo-14">
+            <img src="img/lago-magico-subterraneo.jpg" alt="Lago subterrâneo mágico com águas iluminadas">
+            <p>O canal o leva suavemente até um lago mágico dentro do salão central da cidade perdida!</p>
+            <button class="btn-proximo" data-proximo="23">Nadar até a margem iluminada</button>
+        </div>
+
+        <div class="passo" id="passo-15">
+            <img src="img/passagem-atras-da-cachoeira.jpg" alt="Entrada secreta oculta atrás de uma cachoeira gigante">
+            <p>A bússola aponta para uma passagem secreta atrás de uma cachoeira monumental!</p>
+            <button class="btn-proximo" data-proximo="23">Atravessar a cachoeira</button>
+        </div>
+
+        <div class="passo" id="passo-16">
+            <img src="img/pedras-flutuantes-ceu-estrelado.jpg" alt="Caminho de pedras flutuantes sob um céu estrelado em um vale">
+            <p>As estrelas indicam um caminho de pedras flutuantes sobre o vale. Com cuidado, você chega ao centro da cidade!</p>
+            <button class="btn-proximo" data-proximo="23">Avançar para o Salão Principal</button>
+        </div>
+
+        <div class="passo" id="passo-17">
+            <img src="img/tunel-iluminado-cidade-perdida.jpg" alt="Túnel secreto recém-aberto brilhando ao fundo">
+            <p>A alavanca faz a parede da caverna deslizar, revelando um túnel direto para o Coração da Cidade Perdida!</p>
+            <button class="btn-proximo" data-proximo="23">Entrar no túnel iluminado</button>
+        </div>
+
+        <div class="passo" id="passo-18">
+            <img src="img/cofre-ancestral-livros-tesouros.jpg" alt="Cofre ancestral aberto repleto de ouro e livros antigos">
+            <p>A parede se abre! Sua sabedoria revelou o cofre ancestral com a riqueza e os livros da cidade.</p>
+            <button class="btn-proximo" data-proximo="23">Reclamar a grande descoberta</button>
+        </div>
+
+        <div class="passo" id="passo-19">
+            <img src="img/escada-pedra-sala-do-trono.jpg" alt="Escadaria de pedra descendo em direção à Sala do Trono">
+            <p>Ao pegar o amuleto, uma passagem secreta no chão do altar se abre para a Sala do Trono!</p>
+            <button class="btn-proximo" data-proximo="23">Descer as escadas de pedra</button>
+        </div>
+
+        <div class="passo" id="passo-20">
+            <img src="img/jardim-suspenso-antigo.jpg" alt="Jardim suspenso milenar e majestoso iluminado pelo sol">
+            <p>A luz refletida aciona um mecanismo antiquíssimo, abrindo os portões do Jardim Suspenso!</p>
+            <button class="btn-proximo" data-proximo="23">Entrar no Jardim Suspenso</button>
+        </div>
+
+        <div class="passo" id="passo-21">
+            <img src="img/santuario-atlantida-nordestina.jpg" alt="Santuário antigo brilhando com azul do cristal">
+            <p>O cristal ilumina todo o templo e revela o caminho para o santuário da Atlântida Nordestina!</p>
+            <button class="btn-proximo" data-proximo="23">Seguir a luz do cristal</button>
+        </div>
+
+        <div class="passo" id="passo-22">
+            <img src="img/desembarque-ilha-secreta-ruinas.jpg" alt="Praia tropical de uma ilha secreta com ruínas ancestrais ao fundo">
+            <p>Você rema até a ilha secreta e desembarca direto na entrada principal de uma civilização esquecida!</p>
+            <button class="btn-proximo" data-proximo="23">Desembarcar na ilha</button>
+        </div>
+
+        <div class="passo" id="passo-23">
+            <img src="img/salao-principal-tesouro-livro-sagrado.jpg" alt="Salão principal da cidade perdida com o Grande Livro e tesouros">
+            <p>Você finalmente chegou ao centro da Cidade Perdida! Diante de você está o Grande Livro dos Segredos e o Tesouro Ancestral.</p>
+            <button class="btn-proximo" data-proximo="24">Registrar a descoberta e concluir a aventura</button>
+        </div>
+
+        <div class="passo" id="passo-24">
+            <img src="img/explorador-vitorioso-final-da-jornada.jpg" alt="Ilustração do explorador comemorando o fim da aventura com sucesso">
+            <p>Parabéns, explorador! Suas escolhas o levaram a decifrar um dos maiores mistérios do mundo e entrar para a história!</p>
+            <button class="btn-proximo" data-proximo="0">Recomeçar Aventura</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
