@@ -28,3 +28,12 @@ main{
 img{
     max-width: 90%;
 }
+.passo img {
+    width: 100%;            /* Ocupa a largura do bloco */
+    max-width: 600px;       /* Define um limite máximo de largura */
+    height: 350px;          /* Define uma altura fixa uniforme */
+    object-fit: cover;      /* Preenche a área sem esticar ou distorcer a imagem */
+    border-radius: 10px;    /* Arredonda as bordas da imagem */
+    display: block;
+    margin: 0 auto 20px;    /* Centraliza a imagem e cria espaço abaixo dela */
+}
